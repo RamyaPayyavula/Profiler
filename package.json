@@ -11,7 +11,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/RamyaPayyavula/pet-adoption.git"
+    "url": "git+https://github.com/RamyaPayyavula/Profiler.git"
   },
   "keywords": [
     "y"
@@ -19,9 +19,9 @@
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/RamyaPayyavula/pet-adoption/issues"
+    "url": "https://github.com/RamyaPayyavula/Profiler/issues"
   },
-  "homepage": "https://github.com/RamyaPayyavula/pet-adoption#readme",
+  "homepage": "https://github.com/RamyaPayyavula/Profiler#readme",
   "devDependencies": {
     "babel-eslint": "^10.0.3",
     "eslint": "^6.7.1",
