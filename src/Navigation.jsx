@@ -1,5 +1,6 @@
 import React from "react";
 import Home from "../src/Home";
+import { Link } from "react-router-dom";
 
 class Navigation extends React.Component {
   render() {
@@ -8,28 +9,30 @@ class Navigation extends React.Component {
         <nav className="nav-bar">
           <ul>
             <li>
-              <a href="default.asp">Home</a>
+              <Link to={"/home"}>Home</Link>
             </li>
             <li>
-              <a href="news.asp">Education</a>
+              <Link to={"/education"}>Education</Link>
             </li>
             <li>
-              <a href="about.asp">Research</a>
+              <Link to={"/research"}>Research</Link>
             </li>
             <li>
-              <a href="about.asp">Teaching</a>
+              <Link to={"/teaching"}>Teaching</Link>
             </li>
             <li>
-              <a href="about.asp">Professional Activities</a>
+              <Link to={"/professional-activities"}>
+                Professional Activities
+              </Link>
             </li>
             <li>
-              <a href="about.asp">Accolades</a>
+              <Link to={"/accolades"}>Accolades</Link>
             </li>
           </ul>
         </nav>
-        <div className="header">
+        {/* <div className="header">
           <div className="header-drops"></div>
-        </div>
+        </div> */}
       </div>
     );
   }
