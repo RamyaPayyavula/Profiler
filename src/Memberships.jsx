@@ -1,5 +1,4 @@
 import React from "react";
-import pic from "./assets/main_pic.jpg";
 
 export class Memberships extends React.Component {
   constructor(props) {
