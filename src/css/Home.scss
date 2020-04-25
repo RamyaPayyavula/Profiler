@@ -1,0 +1,33 @@
+// home page css
+.home-container {
+  margin-top: 100px;
+  height: calc(100vh - 200px);
+  width: calc(100vw - 25%);
+  // border: 3px solid #66b3af;
+  position: absolute;
+  margin-left: 12.5%;
+  display: inline-flex;
+  .photo-viewer {
+    height: 100%;
+    width: 50%;
+    position: absolute;
+    // border-right: 3px solid #66b3af;
+  }
+  .photo-data-viewer {
+    width: 50%;
+    height: 100%;
+    float: right;
+    right: 0px;
+    position: absolute;
+    overflow-y: scroll;
+    p {
+      margin: 8px 24px 8px 24px;
+      line-height: 24px;
+      font-size: 18px;
+    }
+  }
+  .profile-pic {
+    width: 100%;
+    height: -webkit-fill-available;
+  }
+}

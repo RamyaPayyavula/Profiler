@@ -4,7 +4,20 @@ import { render } from "react-dom";
 import Navigation from "./Navigation";
 import Footer from "./Footer";
 import Home from "../src/Home";
-import Protofolio from "../src/Protofolio";
+import Publications from "./Publications";
+import Courses from "./Courses";
+import Labs from "./Labs";
+import Conference from "./Conference";
+import Meetings from "./Meetings";
+import Resume from "./Resume";
+import Advising from "./Advising";
+import Training from "./Training";
+import Awards from "./Awards";
+import Grants from "./Grants";
+import Scholarships from "./Scholarships";
+import memberships, { Memberships } from "./Memberships";
+import CommunityService from "./CommunityService";
+import UniversityService from "./UniversityService";
 
 export const App = () => {
   return (
@@ -16,11 +29,19 @@ export const App = () => {
             <Switch>
               <Route path="/" component={Home} exact />
               <Route path="/home" component={Home} />
-              <Route path="/education" component={Protofolio} />
-              <Route path="/research" component={Protofolio} />
-              <Route path="/teaching" component={Protofolio} />
-              <Route path="/professional-activities" component={Protofolio} />
-              <Route path="/accolades" component={Protofolio} />
+              <Route path="/courses" component={Courses} />
+              <Route path="/labs" component={Labs} />
+              <Route path="/publications" component={Publications} />
+              <Route path="/conference" component={Conference} />
+              <Route path="/resume" component={Resume} />
+              <Route path="/meetings" component={Meetings} />
+              <Route path="/advising" component={Advising} />
+              <Route path="/training" component={Training} />
+              <Route path="/scholarships" component={Scholarships} />
+              <Route path="/grants" component={Grants} />
+              <Route path="/memberships" component={Memberships} />
+              <Route path="/university-service" component={UniversityService} />
+              <Route path="/community-service" component={CommunityService} />
               <Route component={Error} />
             </Switch>
             <Footer></Footer>

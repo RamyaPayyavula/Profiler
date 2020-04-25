@@ -1,0 +1,25 @@
+html,
+body {
+  min-height: 100%;
+}
+body {
+  margin: 0px;
+  position: relative;
+  background-color: #f0f8ff;
+}
+.main-container {
+  height: -webkit-fill-available;
+  min-width: 100%;
+  width: 100%;
+  position: relative;
+  display: flex;
+}
+
+.main-img {
+  min-width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  top: 0px;
+  left: 250px;
+  position: absolute;
+}
