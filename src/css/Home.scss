@@ -1,33 +1,54 @@
 // home page css
 .home-container {
-  margin-top: 100px;
-  height: calc(100vh - 200px);
-  width: calc(100vw - 25%);
-  // border: 3px solid #66b3af;
+  margin-top: 70px;
+  // height: calc(100vh - 150px);
+  width: calc(100vw - 20%);
+  // border: 3px solid dimgray;
   position: absolute;
-  margin-left: 12.5%;
+  margin-left: 10%;
   display: inline-flex;
-  .photo-viewer {
-    height: 100%;
-    width: 50%;
-    position: absolute;
-    // border-right: 3px solid #66b3af;
+  @media (max-width: 720px) {
   }
-  .photo-data-viewer {
-    width: 50%;
-    height: 100%;
-    float: right;
-    right: 0px;
-    position: absolute;
-    overflow-y: scroll;
-    p {
-      margin: 8px 24px 8px 24px;
-      line-height: 24px;
-      font-size: 18px;
+}
+.profile-info {
+  padding: 10px;
+
+  @media (min-width: 720px) {
+    display: flex;
+  }
+  p {
+    font-size: 14px;
+    line-height: 5px;
+  }
+  .heading {
+    font-size: 18px;
+    font-weight: 700;
+    min-width: 250px;
+    @media (max-width: 720px) {
+      text-align: center;
     }
   }
-  .profile-pic {
-    width: 100%;
-    height: -webkit-fill-available;
+}
+.profile-desc {
+  padding-right: 32px;
+  @media (max-width: 720px) {
+    text-align: center;
+    padding-bottom: 24px;
+  }
+}
+
+.profile-pic {
+  width: auto;
+  height: 300px;
+  @media (max-width: 720px) {
+    border-radius: 50%;
+  }
+}
+.profile-bio {
+  padding-bottom: 54px;
+  ul {
+    padding-inline-start: 12px;
+  }
+  @media (max-width: 720px) {
   }
 }

@@ -1,5 +1,6 @@
 import React from "react";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import { createStore } from "redux";
 import { render } from "react-dom";
 import Navigation from "./Navigation";
 import Footer from "./Footer";
@@ -15,9 +16,20 @@ import Training from "./Training";
 import Awards from "./Awards";
 import Grants from "./Grants";
 import Scholarships from "./Scholarships";
-import memberships, { Memberships } from "./Memberships";
+import Memberships from "./Memberships";
 import CommunityService from "./CommunityService";
 import UniversityService from "./UniversityService";
+import { Provider } from "react-redux";
+import rootReducer from "../src/Reducer";
+import screenResize from "../src/Actions";
+
+const store = createStore(rootReducer);
+
+window.addEventListener("resize", () => {
+  store.dispatch(
+    screenResize(window.innerWidth, window.innerHeight, window.innerWidth < 720)
+  );
+});
 
 export const App = () => {
   return (
@@ -39,6 +51,7 @@ export const App = () => {
               <Route path="/training" component={Training} />
               <Route path="/scholarships" component={Scholarships} />
               <Route path="/grants" component={Grants} />
+              <Route path="/awards" component={Awards} />
               <Route path="/memberships" component={Memberships} />
               <Route path="/university-service" component={UniversityService} />
               <Route path="/community-service" component={CommunityService} />
@@ -51,4 +64,10 @@ export const App = () => {
     </Router>
   );
 };
-render(<App />, document.getElementById("root"));
+
+render(
+  <Provider store={store}>
+    <App />
+  </Provider>,
+  document.getElementById("root")
+);

@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import DropDown from "../src/utils/DropDown";
-// import pic from "./assets/navicon.png";
+import { connect } from "react-redux";
 
 class Navigation extends React.Component {
   constructor(props) {
@@ -11,24 +11,14 @@ class Navigation extends React.Component {
     };
     this.renderDesktopNavigation = this.renderDesktopNavigation.bind(this);
     this.renderMobileNavigation = this.renderMobileNavigation.bind(this);
-    // this.showMobileMenu = this.showMobileMenu.bind(this);
-    // this.closeMobileMenu = this.closeMobileMenu.bind(this);
+    this.onClickCallback = this.onClickCallback.bind(this);
   }
 
-  // showMobileMenu(event) {
-  //   console.log("here");
-  //   event.preventDefault();
-  //   this.setState({ isMobileMenuOpen: true }, () => {
-  //     document.addEventListener("click", this.closeMobileMenu);
-  //   });
-  // }
-
-  // closeMobileMenu() {
-  //   this.setState({ isMobileMenuOpen: false }, () => {
-  //     document.removeEventListener("click", this.closeMobileMenu);
-  //   });
-  // }
-
+  onClickCallback() {
+    this.props.isMobile
+      ? this.setState({ isMobileMenuOpen: !this.state.isMobileMenuOpen })
+      : null;
+  }
   renderDesktopNavigation() {
     const teachingDropDownList = [
       { label: "Courses", link: "/courses" },
@@ -64,12 +54,18 @@ class Navigation extends React.Component {
       { label: "University Service", link: "/university-service" },
       { label: "Community Service", link: "/community-service" },
     ];
-    const customClassName =
-      this.state.height > 720 ? "desktop-nav-bar-list" : "mobile-nav-bar-list";
+    const customClassName = this.props.isMobile
+      ? "mobile-nav-bar-list"
+      : "desktop-nav-bar-list";
+
     return (
       <ul className={customClassName}>
         <li className="list-item">
-          <Link to={"/home"} className="dropdown-wrapper">
+          <Link
+            to={"/home"}
+            className="dropdown-wrapper"
+            onClick={this.onClickCallback}
+          >
             Home
           </Link>
         </li>
@@ -78,6 +74,7 @@ class Navigation extends React.Component {
             dropDownList={teachingDropDownList}
             header="Teaching"
             showIcon={false}
+            onClickCallback={this.onClickCallback}
           />
         </li>
         <li className="list-item">
@@ -85,6 +82,7 @@ class Navigation extends React.Component {
             dropDownList={researchDropDownList}
             header="Research"
             showIcon={false}
+            onClickCallback={this.onClickCallback}
           />
         </li>
         <li className="list-item">
@@ -92,6 +90,7 @@ class Navigation extends React.Component {
             dropDownList={activitiesDropDownList}
             header="Professional Activities"
             showIcon={false}
+            onClickCallback={this.onClickCallback}
           />
         </li>
         <li className="list-item">
@@ -99,6 +98,7 @@ class Navigation extends React.Component {
             dropDownList={accoladesDropDownList}
             header="Accolades"
             showIcon={false}
+            onClickCallback={this.onClickCallback}
           />
         </li>
         <li className="list-item">
@@ -106,6 +106,7 @@ class Navigation extends React.Component {
             dropDownList={serviceDropDownList}
             header="Service"
             showIcon={false}
+            onClickCallback={this.onClickCallback}
           />
         </li>
       </ul>
@@ -130,13 +131,21 @@ class Navigation extends React.Component {
     return (
       <div className="header-container">
         <nav className="nav-bar">
-          {this.state.height > 720
-            ? this.renderDesktopNavigation()
-            : this.renderMobileNavigation()}
+          {this.props.isMobile
+            ? this.renderMobileNavigation()
+            : this.renderDesktopNavigation()}
         </nav>
       </div>
     );
   }
 }
 
-export default Navigation;
+function mapStateToProps(state) {
+  return {
+    windowWidth: state.windowWidth,
+    windowHeight: state.windowHeight,
+    isMobile: state.isMobile,
+  };
+}
+
+export default connect(mapStateToProps)(Navigation);

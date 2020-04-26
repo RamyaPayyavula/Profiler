@@ -24,13 +24,14 @@ export class DropDown extends React.Component {
   }
   renderDropDown() {
     const { dropDownList } = this.props;
-    console.log("rendering dorp");
     return (
       <div className="dropdown-container">
         <ul className="dropdown">
           {dropDownList.map((item) => (
             <li key={item.lable}>
-              <Link to={item.link}>{item.label}</Link>
+              <Link to={item.link} onClick={this.props.onClickCallback}>
+                {item.label}
+              </Link>
             </li>
           ))}
         </ul>
@@ -41,7 +42,6 @@ export class DropDown extends React.Component {
     const { header, showIcon } = this.props;
     const { isOpen } = this.state;
     const customId = isOpen ? "triangle-up" : "triangle-down";
-    console.log("coming up here");
     return (
       <div className="dropdown-wrapper">
         <div className="dropdown-header" onClick={this.showMenu}>
