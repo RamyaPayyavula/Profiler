@@ -1,0 +1,22 @@
+.research-publications,
+.conferences,
+.research-experience {
+  ul {
+    list-style: decimal;
+  }
+  li {
+    padding-bottom: 16px;
+  }
+}
+.research-experience {
+  p {
+    margin: 0px;
+  }
+  .sub-heading {
+    min-width: 90px;
+    padding-right: 8px;
+  }
+  .research-sub-container {
+    display: flex;
+  }
+}

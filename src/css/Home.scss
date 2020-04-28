@@ -1,16 +1,24 @@
-html {
-  overflow-y: scroll;
-}
+html,
 body {
   height: 100%;
+  margin: 0;
 }
+article {
+  text-align: justify;
+  font-size: 16px;
+  line-height: 20px;
+}
+$global-header-height: 54px;
+$global-footer-height: 64px;
 .app-container {
-  margin-top: 70px;
   width: calc(100vw - 20%);
-  height: calc(100vh - 150px);
-  position: absolute;
   margin-left: 10%;
+  margin-top: $global-header-height;
+  margin-bottom: $global-footer-height;
+  padding-top: 24px;
+  padding-bottom: 8px;
 }
+
 .home-container {
   display: inline-flex;
 }
@@ -49,9 +57,7 @@ body {
 }
 .profile-bio {
   padding-bottom: 54px;
-  article {
-    text-align: justify;
-  }
+
   ul {
     padding-inline-start: 12px;
   }

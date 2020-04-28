@@ -8,10 +8,8 @@ body {
   background-color: #f0f8ff;
 }
 .main-container {
-  height: -webkit-fill-available;
-  min-width: 100%;
   width: 100%;
-  position: relative;
+  height: 100%;
   display: flex;
 }
 

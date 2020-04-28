@@ -5,12 +5,9 @@ import { render } from "react-dom";
 import Navigation from "./Navigation";
 import Footer from "./Footer";
 import Home from "../src/Home";
-import Publications from "./Publications";
 import Courses from "./Courses";
 import Philosophy from "./Philosophy";
-import Conference from "./Conference";
 import Meetings from "./Meetings";
-import Resume from "./Resume";
 import Advising from "./Advising";
 import Training from "./Training";
 import Awards from "./Awards";
@@ -22,6 +19,7 @@ import UniversityService from "./UniversityService";
 import { Provider } from "react-redux";
 import rootReducer from "../src/Reducer";
 import screenResize from "../src/Actions";
+import Research from "./Research";
 
 const store = createStore(rootReducer);
 
@@ -43,9 +41,7 @@ export const App = () => {
               <Route path="/home" component={Home} />
               <Route path="/courses" component={Courses} />
               <Route path="/philosophy" component={Philosophy} />
-              <Route path="/publications" component={Publications} />
-              <Route path="/conference" component={Conference} />
-              <Route path="/resume" component={Resume} />
+              <Route path="/research" component={Research} />
               <Route path="/meetings" component={Meetings} />
               <Route path="/advising" component={Advising} />
               <Route path="/training" component={Training} />

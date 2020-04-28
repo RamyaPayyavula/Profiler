@@ -25,12 +25,6 @@ class Navigation extends React.Component {
       { label: "Teaching Philosophy", link: "/philosophy" },
     ];
 
-    const researchDropDownList = [
-      { label: "Publications", link: "/publications" },
-      { label: "Conference", link: "/conference" },
-      { label: "Resume", link: "/resume" },
-    ];
-
     const activitiesDropDownList = [
       {
         label: "Professional meetings",
@@ -70,17 +64,18 @@ class Navigation extends React.Component {
           </Link>
         </li>
         <li className="list-item">
-          <DropDown
-            dropDownList={teachingDropDownList}
-            header="Teaching"
-            showIcon={false}
-            onClickCallback={this.onClickCallback}
-          />
+          <Link
+            to={"/research"}
+            className="dropdown-wrapper"
+            onClick={this.onClickCallback}
+          >
+            Research
+          </Link>
         </li>
         <li className="list-item">
           <DropDown
-            dropDownList={researchDropDownList}
-            header="Research"
+            dropDownList={teachingDropDownList}
+            header="Teaching"
             showIcon={false}
             onClickCallback={this.onClickCallback}
           />

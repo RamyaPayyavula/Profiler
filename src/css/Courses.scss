@@ -13,7 +13,10 @@
   }
 }
 .subcourse-container {
-  display: flex;
+  @media (min-width: 720px) {
+    display: flex;
+  }
+  display: block;
   .heading {
     min-width: 300px;
   }

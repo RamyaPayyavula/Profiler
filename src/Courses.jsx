@@ -12,7 +12,7 @@ export class Courses extends React.Component {
 
   render() {
     return (
-      <div className="app-container padding-top-24">
+      <div className="app-container">
         <p className="heading text-center font-weight-medium">
           Courses and Labs
         </p>
