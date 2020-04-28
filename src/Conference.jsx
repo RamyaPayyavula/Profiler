@@ -7,7 +7,7 @@ export class Conference extends React.Component {
   }
 
   render() {
-    return <div className="home-container">Labs</div>;
+    return <div className="app-container">Labs</div>;
   }
 }
 export default Conference;

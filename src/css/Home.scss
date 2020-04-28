@@ -1,14 +1,18 @@
-// home page css
-.home-container {
+html {
+  overflow-y: scroll;
+}
+body {
+  height: 100%;
+}
+.app-container {
   margin-top: 70px;
-  // height: calc(100vh - 150px);
   width: calc(100vw - 20%);
-  // border: 3px solid dimgray;
+  height: calc(100vh - 150px);
   position: absolute;
   margin-left: 10%;
+}
+.home-container {
   display: inline-flex;
-  @media (max-width: 720px) {
-  }
 }
 .profile-info {
   padding: 10px;
@@ -22,7 +26,6 @@
   }
   .heading {
     font-size: 18px;
-    font-weight: 700;
     min-width: 250px;
     @media (max-width: 720px) {
       text-align: center;
@@ -46,6 +49,9 @@
 }
 .profile-bio {
   padding-bottom: 54px;
+  article {
+    text-align: justify;
+  }
   ul {
     padding-inline-start: 12px;
   }

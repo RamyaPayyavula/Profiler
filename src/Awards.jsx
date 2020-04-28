@@ -7,7 +7,7 @@ export class Awards extends React.Component {
   }
 
   render() {
-    return <div className="home-container">Awards</div>;
+    return <div className="app-container">Awards</div>;
   }
 }
 export default Awards;

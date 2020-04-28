@@ -22,7 +22,7 @@ class Navigation extends React.Component {
   renderDesktopNavigation() {
     const teachingDropDownList = [
       { label: "Courses", link: "/courses" },
-      { label: "Labs", link: "/labs" },
+      { label: "Teaching Philosophy", link: "/philosophy" },
     ];
 
     const researchDropDownList = [
@@ -40,7 +40,7 @@ class Navigation extends React.Component {
         label: "Student advising",
         link: "/advising",
       },
-      { label: "professional training", link: "/training" },
+      { label: "professional trainings", link: "/training" },
     ];
 
     const accoladesDropDownList = [
@@ -101,7 +101,7 @@ class Navigation extends React.Component {
             onClickCallback={this.onClickCallback}
           />
         </li>
-        <li className="list-item">
+        <li className="list-item last-item">
           <DropDown
             dropDownList={serviceDropDownList}
             header="Service"

@@ -7,7 +7,7 @@ export class Memberships extends React.Component {
   }
 
   render() {
-    return <div className="home-container">Memberships</div>;
+    return <div className="app-container">Memberships</div>;
   }
 }
 export default Memberships;

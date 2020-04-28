@@ -7,7 +7,7 @@ export class CommunityService extends React.Component {
   }
 
   render() {
-    return <div className="home-container">CommunityService</div>;
+    return <div className="app-container">CommunityService</div>;
   }
 }
 export default CommunityService;

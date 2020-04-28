@@ -7,7 +7,7 @@ export class Scholarships extends React.Component {
   }
 
   render() {
-    return <div className="home-container">Scholarships</div>;
+    return <div className="app-container">Scholarships</div>;
   }
 }
 export default Scholarships;

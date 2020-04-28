@@ -7,7 +7,7 @@ export class Training extends React.Component {
   }
 
   render() {
-    return <div className="home-container">Training</div>;
+    return <div className="app-container">Training</div>;
   }
 }
 export default Training;

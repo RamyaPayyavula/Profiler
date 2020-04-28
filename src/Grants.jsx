@@ -7,7 +7,7 @@ export class Grants extends React.Component {
   }
 
   render() {
-    return <div className="home-container">Grants</div>;
+    return <div className="app-container">Grants</div>;
   }
 }
 export default Grants;

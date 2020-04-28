@@ -7,7 +7,7 @@ export class Advising extends React.Component {
   }
 
   render() {
-    return <div className="home-container">Advising</div>;
+    return <div className="app-container">Advising</div>;
   }
 }
 export default Advising;

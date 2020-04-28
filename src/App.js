@@ -7,7 +7,7 @@ import Footer from "./Footer";
 import Home from "../src/Home";
 import Publications from "./Publications";
 import Courses from "./Courses";
-import Labs from "./Labs";
+import Philosophy from "./Philosophy";
 import Conference from "./Conference";
 import Meetings from "./Meetings";
 import Resume from "./Resume";
@@ -42,7 +42,7 @@ export const App = () => {
               <Route path="/" component={Home} exact />
               <Route path="/home" component={Home} />
               <Route path="/courses" component={Courses} />
-              <Route path="/labs" component={Labs} />
+              <Route path="/philosophy" component={Philosophy} />
               <Route path="/publications" component={Publications} />
               <Route path="/conference" component={Conference} />
               <Route path="/resume" component={Resume} />

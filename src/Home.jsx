@@ -1,6 +1,8 @@
 import React from "react";
 import pic from "../src/assets/profilepic.jpg";
 import { connect } from "react-redux";
+import diversityStatementPDF from "../src/docs/Sai_Diversity_Statement_Updated.pdf";
+import Sai_Pinnepalli_CV from "../src/docs/Sai_Pinnepalli_CV.pdf";
 
 export class Home extends React.Component {
   constructor(props) {
@@ -10,24 +12,26 @@ export class Home extends React.Component {
 
   render() {
     return (
-      <div className="home-container">
+      <div className="home-container app-container">
         <div className="profile-info">
           <div className="profile-desc">
             <img src={pic} className="profile-pic" />
-            <p className="heading">Sai Siva Kumar Pinnepalli</p>
+            <p className="heading font-weight-medium">
+              Sai Siva Kumar Pinnepalli
+            </p>
             <p>University of Missouri-Kansas City</p>
             <p>School of Biological and Chemical Sciences</p>
             <p>Department of Chemistry</p>
             <p>5110 Rockhill Road 203 Falrsheim Hall</p>
             <p>Kansas City, Missouri, 64410, USA</p>
-            <br />
             <p>Phone: 816-517-6530</p>
             <p>Email: spthb@mail.umkc.edu</p>
+            <a href={Sai_Pinnepalli_CV}>Curriculum Vitae</a>
             <br />
-            <a>Curriculum Vitae</a>
+            <a href={diversityStatementPDF}>Diversity Statement</a>
           </div>
           <div className="profile-bio">
-            <p className="heading">Bio-Overview: </p>
+            <p className="heading font-weight-medium">Bio-Overview: </p>
             <article>
               Sai Siva Kumar is a doctoral student in Oyler’s research group and
               serves as a graduate teaching assistant for physical chemistry
@@ -45,7 +49,7 @@ export class Home extends React.Component {
               student-centered and experiential learning; and hopes to integrate
               research in teaching methodology.
             </article>
-            <p className="heading">Degrees Earned: </p>
+            <p className="heading font-weight-medium">Degrees Earned: </p>
             <article>
               <ul>
                 <li>2022 Doctoral of Philosophy in Chemistry, UMKC, US</li>

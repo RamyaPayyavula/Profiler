@@ -7,7 +7,7 @@ export class UniversityService extends React.Component {
   }
 
   render() {
-    return <div className="home-container">UniversityService</div>;
+    return <div className="app-container">UniversityService</div>;
   }
 }
 export default UniversityService;
