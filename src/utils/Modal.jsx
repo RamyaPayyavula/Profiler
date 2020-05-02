@@ -4,18 +4,21 @@ export class Modal extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      showModal: true || this.props.showModal,
+      showModal: this.props.showModal,
     };
     this.closeModal = this.closeModal.bind(this);
   }
-
+  componentWillReceiveProps(nextProps, prevProps) {
+    if (nextProps.showModal !== this.state.showModal) {
+      this.setState({ showModal: nextProps.showModal });
+    }
+  }
   closeModal() {
     this.setState({ showModal: false });
   }
 
   render() {
     const { header, body, footer } = this.props;
-
     return this.state.showModal ? (
       <div id="overlay">
         <div className="modal-wrapper">

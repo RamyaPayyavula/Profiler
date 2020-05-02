@@ -1,3 +1,12 @@
+.gallery-container {
+  text-align: center;
+  img {
+    height: 300px;
+    width: 300px;
+    margin-right: 24px;
+    margin-bottom: 24px;
+  }
+}
 .image-viewer-body {
   img {
     height: 50vh;

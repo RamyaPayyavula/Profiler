@@ -5,7 +5,6 @@ export class ImageViewer extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      show: this.props.show,
       currentIndex: this.props.currentIndex,
       currentImageUrl: this.props.currentImageUrl,
     };
@@ -14,31 +13,30 @@ export class ImageViewer extends React.Component {
     this.upadteCurrentImage = this.upadteCurrentImage.bind(this);
   }
 
-  handleShow() {
-    this.setState({ show: true });
-  }
-
-  handleClose() {
-    this.setState({ show: false });
+  componentWillReceiveProps(nextProps, prevProps) {
+    if (nextProps.currentIndex !== this.state.currentIndex) {
+      this.setState({ currentIndex: nextProps.currentIndex });
+    }
+    if (nextProps.currentImageUrl !== this.state.currentImageUrl) {
+      this.setState({ currentImageUrl: nextProps.currentImageUrl });
+    }
   }
 
   handleNextImage() {
     const id = this.state.currentIndex;
     this.setState({ currentIndex: id + 1 });
-    this.upadteCurrentImage();
+    this.upadteCurrentImage(id + 1);
   }
 
   handlePrevImage() {
     const id = this.state.currentIndex;
     this.setState({ currentIndex: id - 1 });
-    this.upadteCurrentImage();
+    this.upadteCurrentImage(id - 1);
   }
 
-  upadteCurrentImage() {
+  upadteCurrentImage(id) {
     const { ImageList } = this.props;
-    const image = ImageList.find(
-      (image) => image.id === this.state.currentIndex
-    );
+    const image = ImageList.find((image) => image.id === id);
     this.setState({ currentImageUrl: image.url });
   }
 
@@ -61,8 +59,14 @@ export class ImageViewer extends React.Component {
         ) : null}
       </>
     );
-
-    return <Modal header={header} body={modalBody} footer={footer} />;
+    return (
+      <Modal
+        header={header}
+        body={modalBody}
+        footer={footer}
+        showModal={true}
+      />
+    );
   }
 }
 export default ImageViewer;

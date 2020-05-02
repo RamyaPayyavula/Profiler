@@ -9,8 +9,6 @@ import image10 from "../src/assets/image10.jpg";
 import image11 from "../src/assets/image11.jpg";
 import image12 from "../src/assets/image12.jpg";
 import ImageViewer from "./ImageViewer";
-import { Modal } from "./utils/Modal";
-import { number } from "prop-types";
 
 export class Gallery extends React.Component {
   constructor(props) {
@@ -47,6 +45,7 @@ export class Gallery extends React.Component {
       { id: 7, url: image11 },
       { id: 8, url: image12 },
     ];
+
     return (
       <div className="app-container gallery-wrapper">
         <h1>Gallery</h1>
