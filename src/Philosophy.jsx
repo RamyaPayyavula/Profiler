@@ -1,8 +1,8 @@
 import React from "react";
 import philosophyPDF from "../src/docs/TeachingPhilosophyStatement.pdf";
 import diversityPDF from "../src/docs/Sai_Diversity_Statement_Updated.pdf";
-import image4 from "../src/assets/image4.jpg";
-import image5 from "../src/assets/image5.jpg";
+import image4 from "../src/assets/Image4.jpg";
+import image5 from "../src/assets/Image5.jpg";
 
 export class Philosophy extends React.Component {
   constructor(props) {

@@ -1,7 +1,7 @@
 import React from "react";
-import image1 from "../src/assets/image1.png";
-import image2 from "../src/assets/image2.png";
-import image3 from "../src/assets/image3.png";
+import image1 from "../src/assets/Image1.png";
+import image2 from "../src/assets/Image2.png";
+import image3 from "../src/assets/Image3.png";
 
 export class Interests extends React.Component {
   constructor(props) {
