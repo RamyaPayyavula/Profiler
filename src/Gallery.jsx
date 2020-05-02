@@ -53,6 +53,7 @@ export class Gallery extends React.Component {
           {ImageList.map((image) => {
             return (
               <img
+                alt="galler"
                 src={image.url}
                 key={image.id}
                 onClick={this.onClickOpenImageViewer.bind(this, image)}

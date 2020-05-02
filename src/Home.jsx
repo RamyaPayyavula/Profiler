@@ -7,7 +7,7 @@ export class Home extends React.Component {
     return (
       <div className="home-container app-container">
         <div className="profile-desc">
-          <img src={pic} className="profile-pic" />
+          <img src={pic} className="profile-pic" alt="profile pic" />
           <h1>Sai Siva Kumar Pinnepalli</h1>
           <p>University of Missouri-Kansas City</p>
           <p>School of Biological &amp; Chemical Sciences</p>

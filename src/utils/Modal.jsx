@@ -23,7 +23,7 @@ export class Modal extends React.Component {
       <div id="overlay">
         <div className="modal-wrapper">
           <div className="modal-close" onClick={this.closeModal}>
-            <img src={closeIcon} width="24px" />
+            <img src={closeIcon} width="24px" alt="close" />
           </div>
           <div className="modal-container">
             <div className="modal-header">{header}</div>

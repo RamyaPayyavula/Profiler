@@ -42,17 +42,29 @@ export class Interests extends React.Component {
         </div>
         <div className="reserch-interest-images">
           <figure>
-            <img src={image1} className="margin-top-24" />
+            <img
+              src={image1}
+              className="margin-top-24"
+              alt="PECVD Thin-film deposition"
+            />
             <figcaption>Fig1: PECVD Thin-film deposition</figcaption>
           </figure>
           <figure>
-            <img src={image2} className="margin-top-24" />
+            <img
+              src={image2}
+              className="margin-top-24"
+              alt="Solid-state NMR of disordered materials"
+            />
             <figcaption>
               Fig2: Solid-state NMR of disordered materials
             </figcaption>
           </figure>
           <figure>
-            <img src={image3} className="margin-top-24" />
+            <img
+              src={image3}
+              className="margin-top-24"
+              alt="X-ray photoelectron spectroscopy of thin-films"
+            />
             <figcaption>
               Fig3: X-ray photoelectron spectroscopy of thin-films
             </figcaption>

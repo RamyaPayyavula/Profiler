@@ -44,7 +44,7 @@ export class ImageViewer extends React.Component {
     const header = "Image Viewer";
     const modalBody = (
       <div className="image-viewer-body">
-        <img src={this.state.currentImageUrl} />
+        <img src={this.state.currentImageUrl} alt="" />
       </div>
     );
     const footer = (

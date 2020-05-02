@@ -1,13 +1,18 @@
 {
-  "name": "y",
+  "name": "profiler",
   "version": "1.0.0",
   "description": "y",
   "main": "y",
   "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "dev": "parcel src/index.html",
     "format": "prettier \"src/**/*.{js,html,css}\" --write",
-    "lint": "eslint \"src/**/*.{js,jsx}\" --quiet",
-    "test": "y"
+    "lint": "eslint \"src/**/*.{js,jsx}\" --quiet"
   },
   "repository": {
     "type": "git",
@@ -21,9 +26,9 @@
   "bugs": {
     "url": "https://github.com/RamyaPayyavula/Profiler/issues"
   },
-  "homepage": "https://github.com/RamyaPayyavula/Profiler#readme",
+  "homepage": "https://github.com/RamyaPayyavula/Profiler/home",
   "devDependencies": {
-    "babel-eslint": "^10.0.3",
+    "gh-pages": "^2.2.0",
     "eslint": "^6.7.1",
     "eslint-config-prettier": "^6.7.0",
     "eslint-plugin-import": "^2.18.2",
@@ -35,18 +40,36 @@
     "sass": "^1.26.2"
   },
   "dependencies": {
-    "@frontendmasters/pet": "^1.0.3",
+    "@testing-library/jest-dom": "^4.2.4",
+    "@testing-library/react": "^9.5.0",
+    "@testing-library/user-event": "^7.2.1",
     "acorn": "^7.1.1",
     "kind-of": "^6.0.3",
     "minimist": "^0.2.1",
     "prop-types": "^15.7.2",
     "react": "^16.13.1",
-    "react-dom": "^16.12.0",
+    "react-dom": "^16.13.1",
     "react-redux": "^7.2.0",
     "react-router": "^5.1.2",
     "react-router-dom": "^5.1.2",
     "react-window-size": "^1.2.2",
     "redux": "^4.0.5",
-    "serialize-to-js": "^3.0.1"
+    "serialize-to-js": "^3.0.1",
+    "react-scripts": "^3.4.1"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
   }
 }

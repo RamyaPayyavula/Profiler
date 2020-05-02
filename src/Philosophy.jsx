@@ -26,7 +26,7 @@ export class Philosophy extends React.Component {
               For more information download the teaching philosophy statement.
             </a>
           </article>
-          <img src={image4} width="300" />
+          <img src={image4} width="300" alt="" />
         </div>
 
         <h1>Diversity Statement</h1>
@@ -47,7 +47,7 @@ export class Philosophy extends React.Component {
               For more information download the diversity statement.
             </a>
           </article>
-          <img src={image5} width="300" />
+          <img src={image5} width="300" alt="" />
         </div>
       </div>
     );

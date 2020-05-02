@@ -8,10 +8,11 @@ class Footer extends React.Component {
   render() {
     return (
       <div className="footer">
-        <img src={gmail} />
-        <img src={phone} />
-        <img src={facebook} />
-        <img src={twitter} />
+        {/* <img src={gmail} alt="gmail" />
+        <img src={phone} alt="phone" /> */}
+
+        <img src={facebook} alt="facebook" />
+        <img src={twitter} alt="twitter" />
       </div>
     );
   }
