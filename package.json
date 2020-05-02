@@ -26,7 +26,6 @@
   "bugs": {
     "url": "https://github.com/RamyaPayyavula/Profiler/issues"
   },
-  "homepage": "https://github.com/RamyaPayyavula/Profiler/home",
   "devDependencies": {
     "gh-pages": "^2.2.0",
     "eslint": "^6.7.1",
