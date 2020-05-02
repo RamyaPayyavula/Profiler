@@ -7,3 +7,20 @@
 .font-weight-medium {
   font-weight: 700;
 }
+.padding-top-8 {
+  padding-top: 8px;
+}
+.margin-top-24 {
+  margin-top: 24px;
+}
+.margin-right-16 {
+  margin-right: 16px;
+}
+.padding-right-16 {
+  padding-right: 16px;
+}
+.text-align-center-mobile {
+  @media (max-width: 720px) {
+    text-align: center;
+  }
+}

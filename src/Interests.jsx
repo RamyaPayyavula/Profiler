@@ -1,6 +1,9 @@
 import React from "react";
+import image1 from "../src/assets/image1.png";
+import image2 from "../src/assets/image2.png";
+import image3 from "../src/assets/image3.png";
 
-export class Research extends React.Component {
+export class Interests extends React.Component {
   constructor(props) {
     super(props);
     this.state = {};
@@ -9,12 +12,12 @@ export class Research extends React.Component {
   render() {
     return (
       <div className="app-container">
-        <div className="research-statement">
-          <p className="heading font-weight-medium">Research Statement</p>
-          <p className="heading">
+        <div>
+          <h1>Research Interests</h1>
+          <p className="text-align-center-mobile">
             <em>INNOVATION DRIVES RESEARCH!</em>
           </p>
-          <article>
+          <article className="padding-top-8">
             Our research focus is on design and characterization of amorphous
             materials with an emphasis on amorphous thin films fabricated by
             plasma-enhanced chemical vapor deposition. The long-term goal is to
@@ -37,102 +40,30 @@ export class Research extends React.Component {
             materials.
           </article>
         </div>
-        <div className="research-publications">
-          <p className="heading font-weight-medium">Research Publications</p>
-          <ul>
-            <li>
-              <article>
-                Naga Sai Visweswar K; Swayamsiddha K;
-                <strong>Sai Siva Kumar P; </strong>Janardhana Chelli, Mukesh
-                Doble. Microbial cyclic β-(1 → 3), (1 → 6)-glucans as potential
-                drug carriers: Interaction studies between cyclic β glucans
-                isolated from Bradyrhizobium japonicum and Betulinic acid.{" "}
-                <em>
-                  Spectrochimica Acta Part A: Molecular and Biomolecular
-                  Spectroscopy
-                </em>{" "}
-                203 <strong>(2018)</strong>494-500.{" "}
-                <a href="https://doi.org/10.1016/j.saa.2018.05.106">
-                  doi: 10.1016/j.saa.2018.05.106
-                </a>
-              </article>
-            </li>
-            <li>
-              <article>
-                Poshetti Dhanishta; <strong>Sai Siva Kumar P;</strong>; Sandeep
-                Kumar Mishra; Suryaprakash Nagarajarao. Intramolecular Hydrogen
-                Bond Directed Stable Conformations of Benzoyl Phenyl Oxalamides:
-                Unambiguous Evidence by Extensive NMR Studies and DFT Based
-                Computations.<em> RSC Adv.,</em>
-                <strong> 2018</strong>, 8, 11230–11240.
-                <a href="https://doi.org/10.1039/C8RA00357B">
-                  doi:10.1039/C8RA00357B
-                </a>
-              </article>
-            </li>
-            <li>
-              <article>
-                Tejkiran P J, Brahma Teja M S,{" "}
-                <strong>Sai Siva Kumar P, </strong>Pranitha Sankar, Reji Philip,
-                Naveen S, Lokanath N K, Nageswara Rao G. D-A-π-D synthetic
-                approach for thienyl chalcones - NLO- a structure activity
-                study.{" "}
-                <em>
-                  Journal of Photochemistry and Photobiology A: Chemistry{" "}
-                </em>
-                324 <strong>(2016)</strong> 33-39.{" "}
-                <a href="https://doi.org/10.1016/j.jphotochem.2016.03.009">
-                  doi:10.1016/j.jphotochem.2016.03.009
-                </a>
-              </article>
-            </li>
-            <li>
-              <article>
-                R.S.Sai Siddhardha, M.S.Brahma Teja, P.J.Tejkiran, Susana Addo
-                Ntim, <strong>Sai Siva Kumar P</strong>, V. Lakshminarayanan,
-                Somnath Mitra, Sai Sathish Ramamurthy. Ultra-low casting of Pt
-                based nano-ink for electrooxidation of glycerol and ethylene
-                glycol fuels in alkaline medium. <em>Fuel </em> 158{" "}
-                <strong>(2015)</strong> 659–663.{" "}
-                <a href="https://doi.org/10.1016/j.jphotochem.2016.03.009">
-                  doi:10.1016/j.jphotochem.2016.03.009
-                </a>
-              </article>
-            </li>
-            <li>
-              <article>
-                5. Sunil A, Brahma Teja, <strong>Sai Siva Kumar P </strong>and
-                Sundaresan C N. An azo based chemosensor for sensing Chromium
-                (III) in micellar medium.
-                <em>
-                  International Conference on Global Opportunities for Latest
-                  Developments in Chemistry and Technology{" "}
-                </em>
-                (Gold-<strong>2014</strong>).
-              </article>
-            </li>
-          </ul>
+        <div className="reserch-interest-images">
+          <figure>
+            <img src={image1} className="margin-top-24" />
+            <figcaption>Fig1: PECVD Thin-film deposition</figcaption>
+          </figure>
+          <figure>
+            <img src={image2} className="margin-top-24" />
+            <figcaption>
+              Fig2: Solid-state NMR of disordered materials
+            </figcaption>
+          </figure>
+          <figure>
+            <img src={image3} className="margin-top-24" />
+            <figcaption>
+              Fig3: X-ray photoelectron spectroscopy of thin-films
+            </figcaption>
+          </figure>
         </div>
-        <div className="conferences">
-          <p className="heading font-weight-medium">Conference Presentation</p>
+
+        <div className="list-alignment-container research-experience">
+          <h1>Research Experience</h1>
           <ul>
             <li>
-              <article>
-                <strong>Sai Siva Kumar Pinnepalli</strong>, Christopher Burkett,
-                Jinwoo Hwang, Nathan Oyler, Michelle M. Paquette. Structure
-                Characterization of PECVD a-SiCN:H Thin Films: Toward Machine
-                Learning Algorithms for Modeling of Complex Disordered Solids.
-                <em>AVS 66th International Symposium &amp; Exhibition, </em>
-                October 20-25, 2019, Ohio.
-              </article>
-            </li>
-          </ul>
-        </div>
-        <div className="research-experience">
-          <p className="heading font-weight-medium">Research Experience</p>
-          <ul>
-            <li>
-              <div className="research-sub-container">
+              <div className="sub-container">
                 <p className="sub-heading">
                   <em>Organization</em>:
                 </p>
@@ -142,15 +73,15 @@ export class Research extends React.Component {
                 </p>
               </div>
 
-              <div className="research-sub-container">
+              <div className="sub-container">
                 <p className="sub-heading">
                   <em>Year</em>:
                 </p>
                 <p>2018 - current</p>
               </div>
-              <div className="research-sub-container">
+              <div className="sub-container">
                 <p className="sub-heading">
-                  <em>Responsibility</em>:
+                  <em>Research</em>:
                 </p>
                 <p>
                   Synthesis of novel organic molecular precursors for PECVD.
@@ -160,7 +91,7 @@ export class Research extends React.Component {
               </div>
             </li>
             <li>
-              <div className="research-sub-container">
+              <div className="sub-container">
                 <p className="sub-heading">
                   <em>Organization</em>:
                 </p>
@@ -168,15 +99,15 @@ export class Research extends React.Component {
                   Hindustan Petroleum Chemical Limited (R&amp;D) Center, India.
                 </p>
               </div>
-              <div className="research-sub-container">
+              <div className="sub-container">
                 <p className="sub-heading">
                   <em>Year</em>:
                 </p>
                 <p>2017 - 2018</p>
               </div>
-              <div className="research-sub-container">
+              <div className="sub-container">
                 <p className="sub-heading">
-                  <em>Responsibility</em>:
+                  <em>Research</em>:
                 </p>
                 <p>
                   Total crude oil analysis from the refineries – fractions of
@@ -187,21 +118,21 @@ export class Research extends React.Component {
               </div>
             </li>
             <li>
-              <div className="research-sub-container">
+              <div className="sub-container">
                 <p className="sub-heading">
                   <em>Organization</em>:
                 </p>
                 <p>NMR Research Center, Indian Institute of Science, India.</p>
               </div>
-              <div className="research-sub-container">
+              <div className="sub-container">
                 <p className="sub-heading">
                   <em>Year</em>:
                 </p>
                 <p>2016 - 2017</p>
               </div>
-              <div className="research-sub-container">
+              <div className="sub-container">
                 <p className="sub-heading">
-                  <em>Responsibility</em>:
+                  <em>Research</em>:
                 </p>
                 <p>
                   Synthesis of benzoyl phenyl oxalamide derivatives to probe the
@@ -213,7 +144,7 @@ export class Research extends React.Component {
               </div>
             </li>
             <li>
-              <div className="research-sub-container">
+              <div className="sub-container">
                 <p className="sub-heading">
                   <em>Organization</em>:
                 </p>
@@ -222,15 +153,15 @@ export class Research extends React.Component {
                   Scientific Research (JNCASR), India.
                 </p>
               </div>
-              <div className="research-sub-container">
+              <div className="sub-container">
                 <p className="sub-heading">
                   <em>Year</em>:
                 </p>
                 <p>2015 - 2016</p>
               </div>
-              <div className="research-sub-container">
+              <div className="sub-container">
                 <p className="sub-heading">
-                  <em>Responsibility</em>:
+                  <em>Research</em>:
                 </p>
                 <p>
                   Synthesis perylene bis-imide functional organic molecules for
@@ -239,21 +170,21 @@ export class Research extends React.Component {
               </div>
             </li>
             <li>
-              <div className="research-sub-container">
+              <div className="sub-container">
                 <p className="sub-heading">
                   <em>Organization</em>:
                 </p>
                 <p>Department of Chemistry, SSSIHL</p>
               </div>
-              <div className="research-sub-container">
+              <div className="sub-container">
                 <p className="sub-heading">
                   <em>Year</em>:
                 </p>
                 <p>2014 - 2015</p>
               </div>
-              <div className="research-sub-container">
+              <div className="sub-container">
                 <p className="sub-heading">
-                  <em>Responsibility</em>:
+                  <em>Research</em>:
                 </p>
                 <p>
                   Brady rhizobium bacterial culture and cyclic glucan extraction
@@ -266,21 +197,21 @@ export class Research extends React.Component {
               </div>
             </li>
             <li>
-              <div className="research-sub-container">
+              <div className="sub-container">
                 <p className="sub-heading">
                   <em>Organization</em>:
                 </p>
                 <p>Department of Chemistry, SSSIHL</p>
               </div>
-              <div className="research-sub-container">
+              <div className="sub-container">
                 <p className="sub-heading">
                   <em>Year</em>:
                 </p>
                 <p>2013 - 2014</p>
               </div>
-              <div className="research-sub-container">
+              <div className="sub-container">
                 <p className="sub-heading">
-                  <em>Responsibility</em>:
+                  <em>Research</em>:
                 </p>
                 <p>
                   Metal ion sensing and interference studies by complex forming
@@ -297,4 +228,4 @@ export class Research extends React.Component {
     );
   }
 }
-export default Research;
+export default Interests;

@@ -1,0 +1,24 @@
+.philosophy-container {
+  margin-bottom: 48px;
+
+  @media (min-width: 720px) {
+    display: flex;
+    article {
+      padding-right: 48px;
+    }
+  }
+  img {
+    margin-top: 24px;
+  }
+  @media (max-width: 720px) {
+    text-align: center;
+  }
+}
+.gallery-container {
+  img {
+    height: 300px;
+    width: 300px;
+    margin-right: 24px;
+    margin-bottom: 24px;
+  }
+}

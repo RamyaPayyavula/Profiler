@@ -20,28 +20,20 @@ class Navigation extends React.Component {
       : null;
   }
   renderDesktopNavigation() {
-    const teachingDropDownList = [
-      { label: "Courses", link: "/courses" },
-      { label: "Teaching Philosophy", link: "/philosophy" },
+    const researchDropDownList = [
+      { label: "Interests", link: "/interests" },
+      { label: "Publications", link: "/publications" },
+      { label: "People", link: "/people" },
     ];
 
-    const activitiesDropDownList = [
-      {
-        label: "Professional meetings",
-        link: "/meetings",
-      },
-      {
-        label: "Student advising",
-        link: "/advising",
-      },
-      { label: "professional trainings", link: "/training" },
+    const teachingDropDownList = [
+      { label: "Courses", link: "/courses" },
+      { label: "Philosophy & Diversity", link: "/philosophy" },
     ];
 
     const accoladesDropDownList = [
-      { label: "Awards", link: "/awards" },
-      { label: "Scholarships", link: "/scholarships" },
+      { label: "Awards & Scholarships", link: "/awards" },
       { label: "Grants", link: "/grants" },
-      { label: "Memberships", link: "/memberships" },
     ];
 
     const serviceDropDownList = [
@@ -64,13 +56,12 @@ class Navigation extends React.Component {
           </Link>
         </li>
         <li className="list-item">
-          <Link
-            to={"/research"}
-            className="dropdown-wrapper"
-            onClick={this.onClickCallback}
-          >
-            Research
-          </Link>
+          <DropDown
+            dropDownList={researchDropDownList}
+            header="Research"
+            showIcon={false}
+            onClickCallback={this.onClickCallback}
+          />
         </li>
         <li className="list-item">
           <DropDown
@@ -81,13 +72,15 @@ class Navigation extends React.Component {
           />
         </li>
         <li className="list-item">
-          <DropDown
-            dropDownList={activitiesDropDownList}
-            header="Professional Activities"
-            showIcon={false}
-            onClickCallback={this.onClickCallback}
-          />
+          <Link
+            to={"/activities"}
+            className="dropdown-wrapper"
+            onClick={this.onClickCallback}
+          >
+            Activities
+          </Link>
         </li>
+
         <li className="list-item">
           <DropDown
             dropDownList={accoladesDropDownList}
@@ -96,13 +89,23 @@ class Navigation extends React.Component {
             onClickCallback={this.onClickCallback}
           />
         </li>
-        <li className="list-item last-item">
-          <DropDown
-            dropDownList={serviceDropDownList}
-            header="Service"
-            showIcon={false}
-            onClickCallback={this.onClickCallback}
-          />
+        <li className="list-item">
+          <Link
+            to={"/service"}
+            className="dropdown-wrapper"
+            onClick={this.onClickCallback}
+          >
+            Service
+          </Link>
+        </li>
+        <li className="list-item">
+          <Link
+            to={"/gallery"}
+            className="dropdown-wrapper"
+            onClick={this.onClickCallback}
+          >
+            Gallery
+          </Link>
         </li>
       </ul>
     );

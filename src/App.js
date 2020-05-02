@@ -7,19 +7,17 @@ import Footer from "./Footer";
 import Home from "../src/Home";
 import Courses from "./Courses";
 import Philosophy from "./Philosophy";
-import Meetings from "./Meetings";
-import Advising from "./Advising";
-import Training from "./Training";
+import Activities from "./Activities";
 import Awards from "./Awards";
 import Grants from "./Grants";
-import Scholarships from "./Scholarships";
-import Memberships from "./Memberships";
-import CommunityService from "./CommunityService";
-import UniversityService from "./UniversityService";
+import Gallery from "./Gallery";
+import Service from "./Service";
 import { Provider } from "react-redux";
 import rootReducer from "../src/Reducer";
 import screenResize from "../src/Actions";
-import Research from "./Research";
+import Interests from "./Interests";
+import People from "./People";
+import Publications from "./Publications";
 
 const store = createStore(rootReducer);
 
@@ -41,16 +39,14 @@ export const App = () => {
               <Route path="/home" component={Home} />
               <Route path="/courses" component={Courses} />
               <Route path="/philosophy" component={Philosophy} />
-              <Route path="/research" component={Research} />
-              <Route path="/meetings" component={Meetings} />
-              <Route path="/advising" component={Advising} />
-              <Route path="/training" component={Training} />
-              <Route path="/scholarships" component={Scholarships} />
+              <Route path="/interests" component={Interests} />
+              <Route path="/publications" component={Publications} />
+              <Route path="/people" component={People} />
+              <Route path="/activities" component={Activities} />
               <Route path="/grants" component={Grants} />
               <Route path="/awards" component={Awards} />
-              <Route path="/memberships" component={Memberships} />
-              <Route path="/university-service" component={UniversityService} />
-              <Route path="/community-service" component={CommunityService} />
+              <Route path="/service" component={Service} />
+              <Route path="/gallery" component={Gallery} />
               <Route component={Error} />
             </Switch>
             <Footer></Footer>

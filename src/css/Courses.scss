@@ -1,23 +1,17 @@
-.philosophy-container {
-  width: 100%;
-}
-.heading {
-  font-size: 18px;
-  min-width: 250px;
-}
-.course-container {
-  min-width: 100%;
-  p {
-    margin: 0px;
-    line-height: 26px;
+.courses-container {
+  .sub-heading {
+    min-width: 200px;
   }
-}
-.subcourse-container {
-  @media (min-width: 720px) {
-    display: flex;
+  ul {
+    list-style: none;
+    padding-left: 0px;
   }
-  display: block;
-  .heading {
-    min-width: 300px;
+  li {
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    padding: 20px;
+    box-shadow: bisque;
+    box-shadow: 2px 2px #888888;
+    margin-bottom: 24px;
   }
 }

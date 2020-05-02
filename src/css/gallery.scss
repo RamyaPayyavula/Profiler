@@ -1,0 +1,23 @@
+.image-viewer-body {
+  img {
+    height: 50vh;
+    max-width: 80vw;
+  }
+  overflow: hidden;
+}
+.gallery-wrapper {
+  .modal-footer {
+    button {
+      padding: 8px;
+      border-radius: 5%;
+      background: dimgrey;
+      border: none;
+      color: white;
+      font-size: 16px;
+      font-weight: 700;
+    }
+    .prev-button {
+      margin-right: 24px;
+    }
+  }
+}
