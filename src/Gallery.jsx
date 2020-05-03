@@ -1,5 +1,4 @@
 import React from "react";
-import image4 from "../src/assets/Image4.jpg";
 import image5 from "../src/assets/Image5.jpg";
 import image6 from "../src/assets/Image6.jpeg";
 import image7 from "../src/assets/Image7.jpg";
@@ -35,15 +34,14 @@ export class Gallery extends React.Component {
 
   render() {
     const ImageList = [
-      { id: 0, url: image4 },
-      { id: 1, url: image5 },
-      { id: 2, url: image6 },
-      { id: 3, url: image7 },
-      { id: 4, url: image8 },
-      { id: 5, url: image9 },
-      { id: 6, url: image10 },
-      { id: 7, url: image11 },
-      { id: 8, url: image12 },
+      { id: 0, url: image5 },
+      { id: 1, url: image6 },
+      { id: 2, url: image7 },
+      { id: 3, url: image8 },
+      { id: 4, url: image9 },
+      { id: 5, url: image10 },
+      { id: 6, url: image11 },
+      { id: 7, url: image12 },
     ];
 
     return (

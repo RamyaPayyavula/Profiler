@@ -25,6 +25,7 @@ export const App = () => {
             <Navigation></Navigation>
             <Switch>
               <Route path="/" component={Home} exact />
+              <Route path="/index.html" component={Home} exact />
               <Route path="/home" component={Home} />
               <Route path="/courses" component={Courses} />
               <Route path="/philosophy" component={Philosophy} />

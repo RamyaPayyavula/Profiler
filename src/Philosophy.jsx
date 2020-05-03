@@ -22,7 +22,7 @@ export class Philosophy extends React.Component {
             is a process of unlearning and relearning the subject along with
             students and not just passing information. Each student is unique in
             their learning curve – they require support at different levels.{" "}
-            <a href={philosophyPDF}>
+            <a href={philosophyPDF} target="_blank">
               For more information download the teaching philosophy statement.
             </a>
           </article>
@@ -43,7 +43,7 @@ export class Philosophy extends React.Component {
             diverse academic campus is beneficial place for students to learn
             new perspectives and become open-minded in this continuously
             globalizing world.{" "}
-            <a href={diversityPDF}>
+            <a href={diversityPDF} target="_blank">
               For more information download the diversity statement.
             </a>
           </article>

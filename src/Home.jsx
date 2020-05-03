@@ -17,7 +17,9 @@ export class Home extends React.Component {
           <p>Kansas City, Missouri, 64410, USA</p>
           <p>Email: spthb@mail.umkc.edu</p>
           <br />
-          <a href={Sai_Pinnepalli_CV}>Curriculum Vitae</a>
+          <a href={Sai_Pinnepalli_CV} target="_blank">
+            Curriculum Vitae
+          </a>
         </div>
         <div className="profile-bio">
           <h1>Bio-Overview</h1>

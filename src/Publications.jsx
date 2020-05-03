@@ -27,7 +27,10 @@ export class Publications extends React.Component {
                     Spectroscopy
                   </em>
                   , 203, 2018, 494-500.{" "}
-                  <a href="https://doi.org/10.1016/j.saa.2018.05.106">
+                  <a
+                    href="https://doi.org/10.1016/j.saa.2018.05.106"
+                    target="_blank"
+                  >
                     DOI: 10.1016/j.saa.2018.05.106
                   </a>
                 </article>
@@ -43,7 +46,7 @@ export class Publications extends React.Component {
                   Oxalamides: Unambiguous Evidence by Extensive NMR Studies and
                   DFT Based Computations. <em>RSC Adv.</em>, 2018, 8,
                   11230–11240.
-                  <a href="https://doi.org/10.1039/C8RA00357B">
+                  <a href="https://doi.org/10.1039/C8RA00357B" target="_blank">
                     DOI:10.1039/C8RA00357B
                   </a>
                 </article>
@@ -62,7 +65,10 @@ export class Publications extends React.Component {
                     Journal of Photochemistry and Photobiology A: Chemistry
                   </em>
                   , 2016, 324, 33-39.
-                  <a href="https://doi.org/10.1016/j.jphotochem.2016.03.009">
+                  <a
+                    href="https://doi.org/10.1016/j.jphotochem.2016.03.009"
+                    target="_blank"
+                  >
                     DOI:10.1016/j.jphotochem.2016.03.009
                   </a>
                 </article>
@@ -78,7 +84,10 @@ export class Publications extends React.Component {
                   based nano-ink for electrooxidation of glycerol and ethylene
                   glycol fuels in alkaline medium. <em>Fuel</em>, 2015, 158,
                   659–663.
-                  <a href="https://doi.org/10.1016/j.fuel.2015.06.017">
+                  <a
+                    href="https://doi.org/10.1016/j.fuel.2015.06.017"
+                    target="_blank"
+                  >
                     DOI.org:10.1016/j.fuel.2015.06.017
                   </a>
                 </article>

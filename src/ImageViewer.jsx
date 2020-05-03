@@ -54,7 +54,7 @@ export class ImageViewer extends React.Component {
             Previous Image
           </button>
         ) : null}
-        {this.state.currentIndex < 8 ? (
+        {this.state.currentIndex < 7 ? (
           <button onClick={this.handleNextImage}>Next Image</button>
         ) : null}
       </>

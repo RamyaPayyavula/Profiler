@@ -32,7 +32,9 @@ export class Courses extends React.Component {
                   Experimental methods in physical chemistry. One-hour lecture
                   and six hours laboratory each week. Satisfies writing
                   intensive requirements for the B.A. or B.S. degree.{" "}
-                  <a href={physicalChemistry1}>More Course Information ...</a>
+                  <a href={physicalChemistry1} target="_blank">
+                    More Course Information ...
+                  </a>
                 </p>
               </div>
             </li>
@@ -54,7 +56,9 @@ export class Courses extends React.Component {
                   aspect of the students’ career at college. The qualitative and
                   quantitative aspects of experimental chemistry will be
                   discussed.
-                  <a href={generalChemistry}>More Course Information ...</a>
+                  <a href={generalChemistry} target="_blank">
+                    More Course Information ...
+                  </a>
                 </p>
               </div>
             </li>
@@ -78,7 +82,9 @@ export class Courses extends React.Component {
                   mechanical methods to the study of systems of chemical
                   interest. Exact solutions and approximate methods will be
                   discussed.{" "}
-                  <a href={quantunChemistry}>More Course Information ...</a>
+                  <a href={quantunChemistry} target="_blank">
+                    More Course Information ...
+                  </a>
                 </p>
               </div>
             </li>
@@ -97,7 +103,9 @@ export class Courses extends React.Component {
                   Physical Chemistry I Lesson Plan is is two hour per week
                   course focuses on Transport of molecules in gases, Motion of
                   molecules in liquids and Diffusion process.
-                  <a href={physicalChemistry2}>More Course Information ...</a>
+                  <a href={physicalChemistry2} target="_blank">
+                    More Course Information ...
+                  </a>
                 </p>
               </div>
             </li>
@@ -105,14 +113,14 @@ export class Courses extends React.Component {
         </div>
         <div>
           <h1>Sample Lesson Plan</h1>
-          <a href={LessonPlanPDF}>
+          <a href={LessonPlanPDF} target="_blank">
             Sample lesson plan made for a lecture as part of Chemistry 431/5530A
             Physical Chemistry I course.
           </a>
         </div>
         <div>
           <h1>Sample Assignment Rubric</h1>
-          <a href={RubricPDF}>
+          <a href={RubricPDF} target="_blank">
             Sample assignment rubric created as for CHEM211L General Chemistry
             laboratory course.
           </a>
