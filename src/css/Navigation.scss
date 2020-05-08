@@ -88,6 +88,9 @@
     padding-top: 12px;
     padding-left: 32px;
     height: 40px;
+    @media (max-width: 720px) {
+      padding-left: 12px;
+    }
   }
 }
 

@@ -4,6 +4,7 @@ import scholar from "../src/assets/scholar.png";
 import orcid from "../src/assets/orcid.png";
 import researchgate from "../src/assets/researchgate.png";
 import github from "../src/assets/github.png";
+import mail from "../src/assets/mail.png";
 
 class Footer extends React.Component {
   render() {
@@ -32,6 +33,9 @@ class Footer extends React.Component {
         </a>
         <a href="https://github.com/saisivakumarp/Profile" target="_blank">
           <img src={github} alt="github" />
+        </a>
+        <a href="mailto:spthb@mail.umkc.edu" target="_blank">
+          <img src={mail} alt="mail" />
         </a>
       </div>
     );
