@@ -43,7 +43,7 @@
     "@testing-library/user-event": "^7.2.1",
     "acorn": "^7.1.1",
     "kind-of": "^6.0.3",
-    "minimist": "^0.2.1",
+    "minimist": "^1.2.6",
     "prop-types": "^15.7.2",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
